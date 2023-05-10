@@ -5,13 +5,13 @@ const QuestionsContext = createContext();
 
 function QuestionsProvider({ children }) {
   const {
-    questions, questionIndex, handleChangeQuestion, checkAnswers, showResult, wrong,
+    questions, questionIndex, handleChangeQuestion, checkAnswers, showResult, wrong, resetQuiz,
   } = useQuestions();
 
   return (
     <QuestionsContext.Provider value={
       {
-        questions, questionIndex, handleChangeQuestion, checkAnswers, showResult, wrong,
+        questions, questionIndex, handleChangeQuestion, checkAnswers, showResult, wrong, resetQuiz,
       }
       }
     >
