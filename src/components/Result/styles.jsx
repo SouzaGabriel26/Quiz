@@ -16,6 +16,10 @@ export const Container = styled.div`
       padding: 10px 20px;
       border-radius: 6px;
 
+      &:last-of-type {
+        margin-bottom: 100px;
+      }
     }
+
 
 `;
